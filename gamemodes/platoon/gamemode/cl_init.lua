@@ -1,5 +1,5 @@
 -- Platoon client logic
-include("platoon/sh_core.lua")
+include("modules/sh_core.lua")
 
 -- Переменные для HUD
 Platoon.WaitingCount = 0

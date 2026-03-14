@@ -1,5 +1,5 @@
 -- Platoon server logic
-include("platoon/sh_core.lua")
+include("modules/sh_core.lua")
 
 -- Регистрация сетевых сообщений
 util.AddNetworkString("Platoon_UpdateWaiting")
