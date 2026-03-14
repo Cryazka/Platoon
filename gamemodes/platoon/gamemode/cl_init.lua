@@ -1,6 +1,8 @@
 -- Platoon client logic
 include("modules/sh_core.lua")
 
+print("Client Init")
+
 -- Переменные для HUD
 Platoon.WaitingCount = 0
 Platoon.CurrentPhase = Platoon.PHASE.WAITING

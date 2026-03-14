@@ -1,5 +1,10 @@
+-- отправляет скрипты клиенту
+AddCSLuaFile("cl_init.lua")
+AddCSLuaFile("modules/sh_core.lua")
 -- Platoon server logic
 include("modules/sh_core.lua")
+
+print("Server Init")
 
 -- Регистрация сетевых сообщений
 util.AddNetworkString("Platoon_UpdateWaiting")
