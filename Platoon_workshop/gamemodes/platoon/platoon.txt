@@ -1,8 +1,0 @@
-"Platoon"
-{
-    "title"     "Platoon"
-    "author"    "Fozer and Cryazka"
-    "category"	"pvp"
-    "maps"		"^gm_"
-    "menusystem"	"1"
-}
