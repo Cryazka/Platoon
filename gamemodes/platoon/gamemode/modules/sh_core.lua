@@ -3,8 +3,8 @@ Platoon = Platoon or {}
 
 -- Список фракций
 Platoon.Factions = {
-    ["combine"] = {
-        name = "Альянс",
+    ["Russia"] = {
+        name = "РФ",
         models = {
             default = "models/combine_soldier.mdl",
             crew = "models/combine_super_soldier.mdl",
@@ -22,8 +22,65 @@ Platoon.Factions = {
         },
         spawnpoints = {}
     },
-    ["rebels"] = {
-        name = "Повстанцы",
+    ["Ukraine"] = {
+        name = "Украина",
+        models = {
+            default = "models/player/Group03/male_07.mdl",
+            crew = "models/player/Group03/male_09.mdl",
+            infantry = "models/player/Group03/male_07.mdl",
+            engineer = "models/player/Group03/male_06.mdl"
+        },
+        weapons = {
+            crew = {"weapon_pistol"},
+            infantry = {"weapon_ar2", "weapon_rpg"},
+            engineer = {"weapon_pistol", "weapon_frag"}
+        },
+        vehicles = {
+            tier0 = {"prop_vehicle_jeep"},
+            tier1 = {}
+        },
+        spawnpoints = {}
+    }
+    ["USA"] = {
+        name = "США",
+        models = {
+            default = "models/player/Group03/male_07.mdl",
+            crew = "models/player/Group03/male_09.mdl",
+            infantry = "models/player/Group03/male_07.mdl",
+            engineer = "models/player/Group03/male_06.mdl"
+        },
+        weapons = {
+            crew = {"weapon_pistol"},
+            infantry = {"weapon_ar2", "weapon_rpg"},
+            engineer = {"weapon_pistol", "weapon_frag"}
+        },
+        vehicles = {
+            tier0 = {"prop_vehicle_jeep"},
+            tier1 = {}
+        },
+        spawnpoints = {}
+    }
+    ["Israel"] = {
+        name = "Израиль",
+        models = {
+            default = "models/player/Group03/male_07.mdl",
+            crew = "models/player/Group03/male_09.mdl",
+            infantry = "models/player/Group03/male_07.mdl",
+            engineer = "models/player/Group03/male_06.mdl"
+        },
+        weapons = {
+            crew = {"weapon_pistol"},
+            infantry = {"weapon_ar2", "weapon_rpg"},
+            engineer = {"weapon_pistol", "weapon_frag"}
+        },
+        vehicles = {
+            tier0 = {"prop_vehicle_jeep"},
+            tier1 = {}
+        },
+        spawnpoints = {}
+    }
+    ["Iran"] = {
+        name = "Иран",
         models = {
             default = "models/player/Group03/male_07.mdl",
             crew = "models/player/Group03/male_09.mdl",

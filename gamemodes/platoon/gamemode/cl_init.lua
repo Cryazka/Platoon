@@ -1,5 +1,6 @@
 -- Platoon client logic
 include("modules/sh_core.lua")
+include("modules/client/ui/.lua")
 
 print("Client Init")
 
@@ -7,7 +8,7 @@ print("Client Init")
 Platoon.WaitingCount = 0
 Platoon.CurrentPhase = Platoon.PHASE.WAITING
 
--- Создание простого окна голосования
+-- создаёт простое окно голосования
 local function CreateVotePanel(title, options, callback)
     local frame = vgui.Create("DFrame")
     frame:SetSize(400, 300)
@@ -53,6 +54,7 @@ end)
 
 -- Сетевые обработчики
 
+-- 
 net.Receive("Platoon_UpdateWaiting", function()
     local count = net.ReadInt(8)
     Platoon.WaitingCount = count
@@ -166,7 +168,9 @@ net.Receive("Platoon_StartBattle", function()
     Platoon.CurrentPhase = Platoon.PHASE.BATTLE
     -- Закрываем все возможные окна
     for _, v in ipairs(vgui.GetAll()) do
-        if v:GetClass() == "DFrame" then v:Close() end
+        -- if v:GetClass() == "DFrame" 
+        -- then v:Close() 
+        -- end
     end
     chat.AddText(Color(0,255,0), "Бой начался!")
 end)
