@@ -1,6 +1,6 @@
 -- Platoon client logic
 include("modules/sh_core.lua")
-include("modules/client/ui/.lua")
+-- include("modules/client/ui/.lua")
 
 print("Client Init")
 
@@ -75,12 +75,12 @@ end)
 
 net.Receive("Platoon_OpenFactionVote", function()
     local factions = net.ReadTable()
-    -- Определяем фазу
-    if string.find(net.GetName() or "", "A") then -- грубовато, лучше передавать фазу отдельно, но для простоты:
-        Platoon.CurrentPhase = Platoon.PHASE.FACTION_VOTE_A
-    else
-        Platoon.CurrentPhase = Platoon.PHASE.FACTION_VOTE_B
-    end
+    -- -- Определяем фазу
+    -- if string.find(net.GetName() or "", "A") then -- грубовато, лучше передавать фазу отдельно, но для простоты:
+    --     Platoon.CurrentPhase = Platoon.PHASE.FACTION_VOTE_A
+    -- else
+    --     Platoon.CurrentPhase = Platoon.PHASE.FACTION_VOTE_B
+    -- end
     CreateVotePanel("Выберите фракцию", factions,
         function(choice)
             net.Start("Platoon_VoteFaction")

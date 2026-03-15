@@ -40,7 +40,7 @@ Platoon.Factions = {
             tier1 = {}
         },
         spawnpoints = {}
-    }
+    },
     ["USA"] = {
         name = "США",
         models = {
@@ -59,7 +59,7 @@ Platoon.Factions = {
             tier1 = {}
         },
         spawnpoints = {}
-    }
+    },
     ["Israel"] = {
         name = "Израиль",
         models = {
@@ -78,7 +78,7 @@ Platoon.Factions = {
             tier1 = {}
         },
         spawnpoints = {}
-    }
+    },
     ["Iran"] = {
         name = "Иран",
         models = {
@@ -97,7 +97,7 @@ Platoon.Factions = {
             tier1 = {}
         },
         spawnpoints = {}
-    }
+    },  
 }
 
 -- Роли
